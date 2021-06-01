@@ -28,6 +28,18 @@
             bottom: 0;
             text-align: center;
         }
+
+        .blinking{
+            animation:blinkingText 1.2s infinite;
+        }
+
+        @keyframes blinkingText{
+            0%{     color: #000;    }
+            49%{    color: #000; }
+            60%{    color: transparent; }
+            99%{    color:transparent;  }
+            100%{   color: #000;    }
+        }   
     </style>
 </head>
 
@@ -54,7 +66,7 @@
         17h : Cérémonie spirituelle<br>
         18h30 : Apéritif musical<br>
         19h30 : Dîner sous les étoiles<br>
-        22h : Soirée dansante, thème <b>faune et flore</b> 🐅🌿<br>
+        <span class="blinking">22h : Soirée dansante <b>déguisée</b>, thème <b>faune et flore</b> 🐅🌿</span><br>
 
         Dimanche, 11h : Brunch (inscription sur le <a href="https://forms.gle/33KEuSjMPz1xVJsv6" target="_blank">RSVP</a>)
 
